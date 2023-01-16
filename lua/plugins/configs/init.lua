@@ -32,5 +32,8 @@ return function(use)
 
 		config = function() require "plugins.configs.neo-tree" end
 	}
-
+  use {
+    "folke/which-key.nvim",
+    config = function() require "plugins.configs.which-key" end
+  }
 end
