@@ -1,13 +1,9 @@
 return function(use)
 	use{'wbthomason/packer.nvim'}
-	use { 
-		"catppuccin/nvim", 
-		as = "catppuccin", 
-		setup = function() require "plugins.configs.catppuccin" end
-	}
+	use { 'lalitmee/cobalt2.nvim', requires = 'tjdevries/colorbuddy.nvim' }
 	use{  
 		's1n7ax/nvim-window-picker',
-		setup = function() require "plugins.configs.window-picker" end
+		config = function() require "plugins.configs.window-picker" end
 	}
 	use {
 		"nvim-neo-tree/neo-tree.nvim",
@@ -18,7 +14,7 @@ return function(use)
 			"MunifTanjim/nui.nvim",
 		},
 
-		setup = function() require "plugins.configs.neo-tree" end
+		config = function() require "plugins.configs.neo-tree" end
 	}
 
 end

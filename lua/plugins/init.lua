@@ -10,9 +10,9 @@ local ensure_packer = function()
 	return false
 end
 
-local plugins = require('plugins.configs')
 local packer_bootstrap = ensure_packer()
 local status_ok, packer = pcall(require, 'packer')
+local plugins = require('plugins.configs')
 if status_ok then
 	packer.startup{function(use)
 		plugins(use)

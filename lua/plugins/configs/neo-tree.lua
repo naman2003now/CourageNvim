@@ -25,7 +25,7 @@ neo_tree.setup({
 		},
 		indent = {
 			indent_size = 2,
-			padding = 1, -- extra padding on left hand side
+			padding = 2, -- extra padding on left hand side
 			-- indent guides
 			with_markers = true,
 			indent_marker = "│",
@@ -72,7 +72,7 @@ neo_tree.setup({
 		},
 	},
 	window = {
-		position = "left",
+		position = "float",
 		width = 40,
 		mapping_options = {
 			noremap = true,
@@ -207,4 +207,4 @@ never_show_by_pattern = { -- uses glob style patterns
 	}
 })
 
-vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+vim.cmd([[nnoremap <C-e> :Neotree toggle<cr>]])
