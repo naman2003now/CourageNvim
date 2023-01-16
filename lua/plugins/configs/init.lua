@@ -42,4 +42,9 @@ return function(use)
 		requires = { 'nvim-lua/plenary.nvim' },
 		config = function() require "plugins.configs.telescope" end ,
 	}
+  use {
+    "akinsho/toggleterm.nvim",
+    tag = '*',
+    config = function() require "plugins.configs.toggleterm" end,
+  }
 end
