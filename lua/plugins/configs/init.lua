@@ -47,4 +47,8 @@ return function(use)
     tag = '*',
     config = function() require "plugins.configs.toggleterm" end,
   }
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require "plugins.configs.autopairs" end,
+  }
 end
